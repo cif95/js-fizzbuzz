@@ -1,9 +1,12 @@
 for (let i = 0; i < 101; i++) {
 	let danceFloor = document.querySelector('section#dance-floor');
-	console.log(danceFloor);
 	let newBox = document.createElement('div');
-	newBox.classList.add('my-box');
+	newBox.classList.add('my-box', 'fw-bold');
 	danceFloor.append(newBox);
+	newBox.addEventListener('click', function() {
+		newBox.classList.add('bg-dark', 'text-white', 'fs-6');
+		newBox.innerText = "Don't stop it!"
+	})
 	if ( (i % 3 == 0) && (i % 5 == 0)) {
 		console.log('Fizzbuzz');
 		newBox.innerHTML = 'FizzBuzz';
@@ -15,10 +18,11 @@ for (let i = 0; i < 101; i++) {
 	} else if (i % 3 == 0) {
 		console.log('Fizz');
 		newBox.innerHTML = 'Fizz';
-		newBox.classList.add('my-bg-80s2');
+		newBox.classList.add('my-bg-80s2', 'text-black');
 	} else {
 		console.log(i);
 		newBox.innerHTML = i ;
 		newBox.classList.add('my-bg-80s1');
 	}
 }
+

@@ -2,6 +2,9 @@ body{
 	font-family: 'Raleway';
 	background-color: rgb(39, 39, 39);
 }
+main img{
+	width:250px;
+}
 
 .my-box{
 	height:150px;
@@ -9,19 +12,20 @@ body{
 	line-height:150px;
 	border:2px solid black;
 	border-radius: 10px;
-	box-shadow: inset 0px 0px 20px 10px rgb(131, 129, 112);
+	box-shadow: inset 0px 0px 30px 8px rgb(129, 129, 129);
 }
 
+
 .my-bg-80s1{
-	background-color: #EC00F8;
+	background-color: #f800ba;
 }
 .my-bg-80s2{
-	background-color: #106afb;
+	background-color: #10fbef;
 }
 .my-bg-80s3{
-	background-color: #E8010B;
+	background-color: #ff6600;
 }
 .my-bg-80s4{
-	background-color: #FDFF0B;
+	background-color: #daff0b;
 }
 
